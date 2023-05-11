@@ -14,10 +14,10 @@ if __name__ == "__main__":
         exit(1)
     print("{:d} {:s} {:d} = ".format(a, op, b), end='')
     if op == "+":
-        print("{}".format(a + b))
+        print("{}".format(add(a, b)))
     elif op == "-":
-        print("{}".format(a - b))
+        print("{}".format(sub(a, b)))
     elif op == "/":
-        print("{}".format(a / b))
+        print("{}".format(div(a, b)))
     else:
-        print("{}".format(a * b))
+        print("{}".format(mul(a, b)))
