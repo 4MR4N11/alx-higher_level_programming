@@ -30,6 +30,8 @@ int is_palindrome(listint_t **head)
 {
 	listint_t *copy_head = NULL, *tmp = *head;
 
+	if (!head || !*head)
+		return (1);
 	while (tmp)
 	{
 		add_nodeint_end(&copy_head, tmp->n);
