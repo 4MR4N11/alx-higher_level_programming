@@ -31,11 +31,11 @@ int is_palindrome(listint_t **head)
 	listint_t *tmp;
 	int half_len, list_len, i = 0;
 
-	if (!head)
+	if (!head || !*head || !(*head)->next)
 		return (1);
 	tmp = *head;
 	list_len = get_list_len(tmp);
-	half_len = get_list_len(tmp) / 2;
+	half_len = list_len / 2;
 	half_list = malloc(sizeof(int) * half_len);
 	if (!half_list)
 		return (0);
