@@ -29,3 +29,5 @@ This project is about data structures: set and dictionary in Python.
 - [11-multiply_list_map.py](11-multiply_list_map.py) - Function that returns a list with all values multiplied by a number without using any loops.
 
 - [12-roman_to_int.py](12-roman_to_int.py) - Function that converts a Roman numeral to an integer.
+
+- [100-weight_average.py](100-weight_average.py) - Function that returns the weighted average of all integers tuple.
