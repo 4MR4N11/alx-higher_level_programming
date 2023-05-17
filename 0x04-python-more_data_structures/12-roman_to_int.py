@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if not str(roman_string) or not roman_string:
-        return 0
-    else:
+    if str(roman_string) and roman_string:
         num = 0
         i = 0
         tmp = ''
@@ -22,3 +20,4 @@ def roman_to_int(roman_string):
                     tmp = ""
             i += 1
         return num
+    return 0
