@@ -19,5 +19,6 @@ def roman_to_int(roman_string):
                     break
                 elif key == roman_string[i]:
                     num += value
+                    tmp = ""
             i += 1
         return num
