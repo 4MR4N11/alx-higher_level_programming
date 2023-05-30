@@ -74,17 +74,17 @@ class Square():
         if self.__size == 0:
             print('')
         else:
-            p2 = self.__position[1]
-            while p2 > 0:
+            x = 0
+            while x < self.__position[1]:
                 print()
-                p2 -= 1
+                x += 1
             x = 0
             while x < self.__size:
                 y = 0
-                p1 = self.__position[0]
-                while p1 > 0:
+                while y < self.__position[0]:
                     print(' ', end='')
-                    p1 -= 1
+                    y += 1
+                y = 0
                 while y < self.__size:
                     print('#', end='')
                     y += 1
