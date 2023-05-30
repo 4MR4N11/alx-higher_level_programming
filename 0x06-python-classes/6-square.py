@@ -71,22 +71,22 @@ class Square():
         Returns:
             prints square
         """
-        p2 = 0
         if self.__size == 0:
-            print()
+            print('')
         else:
-            while p2 < self.__position[1] and self.__size != 0:
+            p2 = self.__position[1]
+            while p2 > 0:
                 print()
-                p2 += 1
-            i = 0
-            while i < self.__size:
-                p1 = 0
+                p2 -= 1
+            x = 0
+            while x < self.__size:
                 y = 0
-                while p1 < self.__position[0]:
+                p1 = self.__position[0]
+                while p1 > 0:
                     print(' ', end='')
-                    p1 += 1
+                    p1 -= 1
                 while y < self.__size:
                     print('#', end='')
                     y += 1
                 print()
-                i += 1
+                x += 1
