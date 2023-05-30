@@ -1,7 +1,10 @@
 #!/usr/bin/python3
+"""Square class"""
+
 
 class Square():
-    """Square class"""
+    """Square class with private instance attribute size and raise errors
+       and public instance method area and getter and setter"""
     def __init__(self, size=0):
         """__init__ method
         Args:
