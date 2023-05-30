@@ -12,7 +12,7 @@ class Square():
             size (int): size of square
             position (tuple): position of square
         """
-        self._size = size
+        self.__size = size
         self._position = position
 
     @property
@@ -21,7 +21,7 @@ class Square():
         Returns:
             int: size of square
         """
-        return self._size
+        return self.__size
 
     @size.setter
     def size(self, value):
@@ -29,10 +29,10 @@ class Square():
         Args:
             value (int): size of square
         """
-        self._size = value
-        if not isinstance(self._size, int):
+        self.__size = value
+        if not isinstance(self.__size, int):
             raise TypeError("size must be an integer")
-        if self._size < 0:
+        if self.__size < 0:
             raise ValueError("size must be >= 0")
 
     @property
@@ -62,7 +62,7 @@ class Square():
         Returns:
             int: area of square
         """
-        return self._size * self._size
+        return self.__size * self.__size
 
     def my_print(self):
         """my_print method
@@ -74,13 +74,13 @@ class Square():
             print()
             p2 += 1
         i = 0
-        while i < self._size:
+        while i < self.__size:
             p1 = 0
             y = 0
             while p1 < self._position[0]:
                 print(' ', end='')
                 p1 += 1
-            while y < self._size:
+            while y < self.__size:
                 print('#', end='')
                 y += 1
             print()
