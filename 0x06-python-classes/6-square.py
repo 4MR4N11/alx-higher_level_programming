@@ -59,7 +59,7 @@ class Square():
                 raise TypeError
             if not isinstance(self.__position[1], int):
                 raise TypeError
-            if not all(self.__position >= 0 for v in self.__position):
+            if self.__position[0] < 0 or self.__position[1] < 0:
                 raise TypeError
         except TypeError:
             raise TypeError("position must be a tuple of 2 positive integers")
