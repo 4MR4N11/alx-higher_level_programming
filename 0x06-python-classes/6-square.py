@@ -79,6 +79,7 @@ class Square():
         p2 = 0
         if self.__size == 0:
             print()
+            return
         else:
             for p2 in range(self.__position[1]):
                 print()
