@@ -80,18 +80,11 @@ class Square():
         if self.__size == 0:
             print()
         else:
-            while p2 < self.__position[1]:
+            for p2 in range(self.__position[1]):
                 print()
-                p2 += 1
-            i = 0
-            while i < self.__size:
-                p1 = 0
-                y = 0
-                while p1 < self.__position[0]:
-                    print(' ', end='')
-                    p1 += 1
-                while y < self.__size:
-                    print('#', end='')
-                    y += 1
+            for i in range(self.__size):
+                for p1 in range(self.__position[0]):
+                    print(" ", end="")
+                for j in range(self.__size):
+                    print("#", end="")
                 print()
-                i += 1
