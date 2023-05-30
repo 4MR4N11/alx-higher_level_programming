@@ -3,14 +3,13 @@
 
 
 class Square():
-    """Square class with private instance attribute size and position,
-       raise errors, public instance method area, getter and setter
+    """Square class with private instance attribute size and raise errors
+       and public instance method area and getter and setter
        and public instance method my_print"""
     def __init__(self, size=0, position=(0, 0)):
         """__init__ method
         Args:
             size (int): size of square
-            position (tuple): position of square
         """
         self.__size = size
         self.__position = position
@@ -79,13 +78,12 @@ class Square():
         p2 = 0
         if self.__size == 0:
             print()
-            return
         else:
-            for p2 in range(self.__position[1]):
-                print()
-            for i in range(self.__size):
-                for p1 in range(self.__position[0]):
+            for i in range(0, self.__position[1]):
+                print(" ")
+            for i in range(0, self.__size):
+                for j in range(0, self.__position[0]):
                     print(" ", end="")
-                for j in range(self.__size):
+                for k in range(0, self.__size):
                     print("#", end="")
-                print()
+                print("")
