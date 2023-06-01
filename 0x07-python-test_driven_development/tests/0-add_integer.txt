@@ -1,0 +1,47 @@
+# 0-add_integer.txt
+
+
+The function add_integer adds 2 integers and returns the result.
+The function only accepts integers and floats, otherwise a TypeError is raised.
+
+Import:
+>>> add_integer = __import__('0-add_integer').add_integer
+
+Tests:
+
+>>> add_integer(1, 2)
+3
+
+>>> add_integer(100, -2)
+98
+
+>>> add_integer(2.5, 2)
+4
+
+>>> add_integer(2.5, 2.5)
+4
+
+>>> add_integer(2.5, "string")
+Traceback (most recent call last):
+  ...
+TypeError: b must be an integer
+
+>>> add_integer("string", 2.5)
+Traceback (most recent call last):
+ ....
+TypeError: a must be an integer
+
+>>> add_integer(2.5, None)
+Traceback (most recent call last):
+ ....
+TypeError: b must be an integer
+
+>>> add_integer(None, 2.5)
+Traceback (most recent call last):
+ ....
+TypeError: a must be an integer
+
+>>> add_integer("string", "string")
+Traceback (most recent call last):
+ ....
+TypeError: a must be an integer
