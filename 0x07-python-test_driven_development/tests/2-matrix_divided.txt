@@ -1,0 +1,62 @@
+# 2-matrix_divided.txt
+
+This is a function that divides all elements of a matrix.
+The matrix must be a list of lists of integers or floats,
+otherwise raise a TypeError exception message.
+
+Import:
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Tests:
+>>> matrix = [
+...     [1, 2, 3],
+...     [4, 5, 6]
+... ]
+>>> matrix_divided(matrix, 3)
+[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+>>> matrix
+[[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 2)
+[[0.5, 1.0, 1.5], [2.0, 2.5, 3.0]]
+>>> matrix
+[[1, 2, 3], [4, 5, 6]]
+>>> matrix_divided(matrix, 0)
+Traceback (most recent call last):
+	...
+ZeroDivisionError: division by zero
+>>> matrix_divided(matrix, 1.5)
+[[0.67, 1.33, 2.0], [2.67, 3.33, 4.0]]
+>>> matrix_divided(matrix, 'a')
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+>>> matrix_divided(matrix, [1, 2, 3])
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+>>> matrix_divided(matrix, (1, 2, 3))
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+>>> matrix_divided(matrix, {1, 2, 3})
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+>>> matrix_divided(matrix, {'a': 1, 'b': 2, 'c': 3})
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+>>> matrix_divided(matrix, True)
+Traceback (most recent call last):
+	...
+TypeError: div must be a number
+>>> matrix = 2
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+>>> matrix = [1, 2, 3]
+>>> matrix_divided(matrix, 3)
+Traceback (most recent call last):
+	...
+TypeError: matrix must be a matrix (list of lists) of integers/floats
