@@ -1,0 +1,50 @@
+# 4-print_square.txt
+
+This function prints a square with the character #.
+The function has two raises:
+- If size is not an integer, raise a TypeError exception with the message size must be an integer
+- If size is less than 0, raise a ValueError exception with the message size must be >= 0
+
+Import:
+>>> print_square = __import__('4-print_square').print_square
+
+Tests:
+>>> print_square(4)
+####
+####
+####
+####
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+>>> print_square(0)
+
+>>> print_square(1)
+#
+>>> print_square(2)
+##
+##
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+>>> print_square(4.5)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+>>> print_square("hello")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+>>> print_square([1, 2, 3])
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
