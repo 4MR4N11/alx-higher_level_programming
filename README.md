@@ -21,3 +21,5 @@
 - [0x06](./0x06-python-classes): Python - Classes and Objects
 
 - [0x07](./0x07-python-test_driven_development): Python - Test-driven development
+
+- [0x08](./0x08-python-more_classes): Python - More Classes and Objects
