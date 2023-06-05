@@ -10,8 +10,8 @@ class Rectangle:
             width: width of rectangle
             height: height of rectangle
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
@@ -19,7 +19,7 @@ class Rectangle:
         Return:
             int: width
         """
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -27,7 +27,7 @@ class Rectangle:
         Args:
             value (int): width
         """
-        self.width = value
+        self.__width = value
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
@@ -39,7 +39,7 @@ class Rectangle:
         Return:
             int: height
         """
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
@@ -47,7 +47,7 @@ class Rectangle:
         Args:
             value (int): height
         """
-        self.height = value
+        self.__height = value
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
