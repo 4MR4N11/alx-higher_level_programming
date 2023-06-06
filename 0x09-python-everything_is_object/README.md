@@ -135,7 +135,7 @@ assign_value(l1, l2)
 print(l1)
 ```
 
-- [19-copy_list.py](19-copy_list.py) - Write a function `def copy_list(l):` that returns a copy of a list.
+- [19-copy_list.py](19-copy_list.py) - Write a function `def copy_list(la):` that returns a copy of a list.
 
 - [20-answer.txt](20-answer.txt) - Is a `a` a tuple? Answer with `Yes` or `No`.
 ```
