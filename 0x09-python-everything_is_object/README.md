@@ -198,3 +198,14 @@ a is b
 >>> a += (5,)
 >>> id(a)
 ```
+
+- [100-magic_string.py](100-magic_string.py) - Write a function `def magic_string():` that returns a string `"BestSchool"` n times the number of the iteration (see code):
+
+```
+>>> magic_string()
+'BestSchool'
+>>> magic_string()
+'BestSchool, BestSchool'
+>>> magic_string()
+'BestSchool, BestSchool, BestSchool'
+```
