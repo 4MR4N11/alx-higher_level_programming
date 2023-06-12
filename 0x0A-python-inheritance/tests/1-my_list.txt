@@ -1,14 +1,11 @@
 # 1-my_list.py
 
-The class MyList that inherits from list:
-prototype: class MyList(list):
-Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
-You can assume that all the elements of the list will be of type int
+This module contains a class called MyList that inherits from list.
 
-Import:
+Importing:
 >>> MyList = __import__('1-my_list').MyList
 
-Test:
+Tests:
 
 >>> my_list = MyList()
 >>> my_list.append(1)
