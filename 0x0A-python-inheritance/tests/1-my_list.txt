@@ -9,6 +9,7 @@ Import:
 >>> MyList = __import__('1-my_list').MyList
 
 Test:
+
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(4)
@@ -21,3 +22,58 @@ Test:
 [1, 2, 3, 4, 5]
 >>> print(my_list)
 [1, 4, 2, 3, 5]
+>>> my_list.append(6)
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5, 6]
+>>> my_list.append(-1)
+>>> my_list.print_sorted()
+[-1, 1, 2, 3, 4, 5, 6]
+>>> print(my_list)
+[1, 4, 2, 3, 5, 6, -1]
+>>> my_list.append(-2)
+>>> print(my_list)
+[1, 4, 2, 3, 5, 6, -1, -2]
+>>> my_list.print_sorted()
+[-2, -1, 1, 2, 3, 4, 5, 6]
+>>> print(my_list)
+[1, 4, 2, 3, 5, 6, -1, -2]
+>>> my_list.append(0)
+>>> print(my_list)
+[1, 4, 2, 3, 5, 6, -1, -2, 0]
+>>> my_list.print_sorted()
+[-2, -1, 0, 1, 2, 3, 4, 5, 6]
+>>> print(my_list)
+[1, 4, 2, 3, 5, 6, -1, -2, 0]
+>>> my_list.append(1.5)
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'float'
+>>> my_list.append("test")
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'str'
+>>> my_list.append([1, 2, 3])
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'list'
+>>> my_list.append((1, 2, 3))
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'tuple'
+>>> my_list.append({1, 2, 3})
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'set'
+>>> my_list.append({'1': 2, '2': 3})
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'dict'
+>>> my_list.append(True)
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'bool'
+>>> my_list.append(None)
+Traceback (most recent call last):
+  ...
+TypeError: descriptor 'append' requires a 'list' object but received a 'NoneType'
+
