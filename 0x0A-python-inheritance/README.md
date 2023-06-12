@@ -4,6 +4,10 @@ This project is about inheritance in Python.
 
 ## Files
 
+- [tests](tests) - Folder of test files.
+	- [0-lookup.txt](tests/0-lookup.txt) - Test file for [0-lookup.py](0-lookup.py).
+	- [7-base_geometry.txt](tests/7-base_geometry.txt) - Test file for [7-base_geometry.py](7-base_geometry.py).
+
 - [0-lookup.py](0-lookup.py) - Function that returns the list of available attributes and methods of an object.
 
 - [1-my_list.py](1-my_list.py) - Class `MyList` that inherits from `list`.
