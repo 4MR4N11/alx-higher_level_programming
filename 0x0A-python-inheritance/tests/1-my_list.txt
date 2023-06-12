@@ -6,58 +6,58 @@ Public instance method: def print_sorted(self): that prints the list, but sorted
 You can assume that all the elements of the list will be of type int
 
 Import:
->>> Mylist = __import__('1-my_list').Mylist
+>>> Mylist = __import__('1-my_list').MyList
 
 Tests:
 
 >>> issubclass(Mylist, list)
 True
 
->>> Mylist = Mylist()
->>> Mylist.print_sorted()
+>>> my_list = Mylist()
+>>> my_list.print_sorted()
 []
->>> Mylist.append(1)
->>> Mylist.append(2)
->>> Mylist.append(3)
->>> Mylist.append(4)
->>> print(Mylist)
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(4)
+>>> print(my_list)
 [1, 2, 3, 4]
->>> Mylist.print_sorted()
+>>> my_list.print_sorted()
 [1, 2, 3, 4]
 
->>> Mylist = Mylist()
->>> Mylist.append(4)
->>> Mylist.append(3)
->>> Mylist.append(2)
->>> Mylist.append(1)
->>> print(Mylist)
+>>> my_list = Mylist()
+>>> my_list.append(4)
+>>> my_list.append(3)
+>>> my_list.append(2)
+>>> my_list.append(1)
+>>> print(my_list)
 [4, 3, 2, 1]
->>> Mylist.print_sorted()
+>>> my_list.print_sorted()
 [1, 2, 3, 4]
->>> print(Mylist)
+>>> print(my_list)
 [4, 3, 2, 1]
->>> Mylist.append(-1)
->>> Mylist.append(5)
->>> print(Mylist)
+>>> my_list.append(-1)
+>>> my_list.append(5)
+>>> print(my_list)
 [4, 3, 2, 1, -1, 5]
->>> Mylist.print_sorted()
+>>> my_list.print_sorted()
 [-1, 1, 2, 3, 4, 5]
->>> print(Mylist)
+>>> print(my_list)
 [4, 3, 2, 1, -1, 5]
 
->>> Mylist = Mylist()
->>> Mylist.append(-10)
->>> Mylist.append(-1)
->>> Mylist.append(-7)
->>> Mylist.append(-2)
->>> Mylist.append(-8)
->>> print(Mylist)
+>>> my_list = Mylist()
+>>> my_list.append(-10)
+>>> my_list.append(-1)
+>>> my_list.append(-7)
+>>> my_list.append(-2)
+>>> my_list.append(-8)
+>>> print(my_list)
 [-10, -1, -7, -2, -8]
->>> Mylist.print_sorted()
+>>> my_list.print_sorted()
 [-10, -8, -7, -2, -1]
->>> print(Mylist)
-         [-10, -1, -7, -2, -8]
->>> Mylist.print_sorted(1)
+>>> print(my_list)
+[-10, -1, -7, -2, -8]
+>>> my_list.print_sorted(1)
 Traceback (most recent call last):
-...
-TypeError: print_sorted() takes 1 positional argument but 2 were given
+        ...
+TypeError: MyList.print_sorted() takes 1 positional argument but 2 were given
