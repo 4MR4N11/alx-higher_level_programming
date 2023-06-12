@@ -1,23 +1,63 @@
 # 1-my_list.py
 
 The class MyList that inherits from list:
-prototype: class MyList(list):
+prototype: class MyList(mylistist):
 Public instance method: def print_sorted(self): that prints the list, but sorted (ascending sort)
 You can assume that all the elements of the list will be of type int
 
 Import:
 >>> MyList = __import__('1-my_list').MyList
 
-Test:
->>> my_list = MyList()
->>> my_list.append(1)
->>> my_list.append(4)
->>> my_list.append(2)
->>> my_list.append(3)
->>> my_list.append(5)
->>> print(my_list)
-[1, 4, 2, 3, 5]
->>> my_list.print_sorted()
-[1, 2, 3, 4, 5]
->>> print(my_list)
-[1, 4, 2, 3, 5]
+Tests:
+
+>>> issubclass(MyList, list)
+True
+
+>>> mylist = MyList()
+>>> mylist.print_sorted()
+[]
+>>> mylist.append(1)
+>>> mylist.append(2)
+>>> mylist.append(3)
+>>> mylist.append(4)
+>>> print(mylist)
+[1, 2, 3, 4]
+>>> mylist.print_sorted()
+[1, 2, 3, 4]
+
+>>> mylist = MyList()
+>>> mylist.append(4)
+>>> mylist.append(3)
+>>> mylist.append(2)
+>>> mylist.append(1)
+>>> print(mylist)
+[4, 3, 2, 1]
+>>> mylist.print_sorted()
+[1, 2, 3, 4]
+>>> print(mylist)
+[4, 3, 2, 1]
+>>> mylist.append(-1)
+>>> mylist.append(5)
+>>> print(mylist)
+[4, 3, 2, 1, -1, 5]
+>>> mylist.print_sorted()
+[-1, 1, 2, 3, 4, 5]
+>>> print(mylist)
+[4, 3, 2, 1, -1, 5]
+
+>>> mylist = MyList()
+>>> mylist.append(-10)
+>>> mylist.append(-1)
+>>> mylist.append(-7)
+>>> mylist.append(-2)
+>>> mylist.append(-8)
+>>> print(mylist)
+[-10, -1, -7, -2, -8]
+>>> mylist.print_sorted()
+[-10, -8, -7, -2, -1]
+>>> print(mylist)
+         [-10, -1, -7, -2, -8]
+>>> mylist.print_sorted(1)
+Traceback (most recent call last):
+...
+TypeError: print_sorted() takes 1 positional argument but 2 were given
