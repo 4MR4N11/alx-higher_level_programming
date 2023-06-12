@@ -30,3 +30,7 @@ Test:
 >>> my_list = MyList([-5, -2, -6, -3, -1])
 >>> my_list.print_sorted()
 [-6, -5, -3, -2, -1]
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
