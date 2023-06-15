@@ -28,3 +28,4 @@
 
 - [0x0B](./0x0B-python-input_output): Python - Input/Output
 
+- [0x0C](./0x0C-python-almost_a_circle): Python - Almost a circle
