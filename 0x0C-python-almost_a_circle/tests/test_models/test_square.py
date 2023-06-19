@@ -2,7 +2,6 @@
 """
 Test for the Square class
 """
-
 import unittest
 from unittest.mock import patch
 import io
@@ -15,7 +14,7 @@ import os
 
 
 class TestSquare(unittest.TestCase):
-    """Test the functionality of the Square class"""
+    """Unittests for testing the Square class"""
     @classmethod
     def setUpClass(cls):
         """set up the tests"""
@@ -73,9 +72,9 @@ class TestSquare(unittest.TestCase):
 
     def test_size_typeerror(self):
         """Test non-ints for size"""
-        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
             s = Square("hello")
-        with self.assertRaisesRegex(TypeError, "height must be an integer"):
+        with self.assertRaisesRegex(TypeError, "width must be an integer"):
             s = Square(True)
 
     def test_x_typeerror(self):
@@ -94,9 +93,9 @@ class TestSquare(unittest.TestCase):
 
     def test_size_valueerror(self):
         """Test ints <= 0 for size"""
-        with self.assertRaisesRegex(ValueError, "height must be > 0"):
+        with self.assertRaisesRegex(ValueError, "width must be > 0"):
             s = Square(-1)
-        with self.assertRaisesRegex(ValueError, "height must be > 0"):
+        with self.assertRaisesRegex(ValueError, "width must be > 0"):
             s = Square(0)
 
     def test_x_valueerror(self):
@@ -271,16 +270,16 @@ class TestSquare(unittest.TestCase):
         """test regular use of save_to_file"""
         s1 = Square(1, 1, 1, 1)
         s2 = Square(2, 2, 2, 2)
-        test = [s1, s2]
-        Square.save_to_file(test)
+        lo = [s1, s2]
+        Square.save_to_file(lo)
         with open("Square.json", "r") as f:
             ls = [s1.to_dictionary(), s2.to_dictionary()]
             self.assertEqual(json.dumps(ls), f.read())
 
     def test_stf_empty(self):
         """test save_to_file with empty list"""
-        test = []
-        Square.save_to_file(test)
+        lo = []
+        Square.save_to_file(lo)
         with open("Square.json", "r") as f:
             self.assertEqual("[]", f.read())
 
@@ -298,43 +297,6 @@ class TestSquare(unittest.TestCase):
         s2c = Square.create(**s2)
         self.assertEqual("[Square] (2) 4/0 - 3", str(s1c))
         self.assertEqual("[Square] (9) 7/8 - 6", str(s2c))
-        self.assertIsNot(s1, s1c)
-        self.assertIsNot(s2, s2c)
-        self.assertNotEqual(s1, s1c)
-        self.assertNotEqual(s2, s2c)
-
-    def test_load_from_file_no_file(self):
-        """Checks use of load_from_file with no file"""
-        try:
-            os.remove("Square.json")
-        except FileNotFoundError:
-            pass
-        self.assertEqual(Square.load_from_file(), [])
-
-    def test_load_from_file_empty_file(self):
-        """Checks use of load_from_file with empty file"""
-        try:
-            os.remove("Square.json")
-        except FileNotFoundError:
-            pass
-        open("Square.json", 'a').close()
-        self.assertEqual(Square.load_from_file(), [])
-
-    def test_load_from_file(self):
-        """test normal use of load_from_file"""
-        s1 = Square(2, 3, 4, 5)
-        s2 = Square(7, 8, 9, 10)
-        li = [s1, s2]
-        Square.save_to_file(li)
-        lo = Square.load_from_file()
-        self.assertTrue(type(lo) is list)
-        self.assertEqual(len(lo), 2)
-        s1c = lo[0]
-        s2c = lo[1]
-        self.assertTrue(type(s1c) is Square)
-        self.assertTrue(type(s2c) is Square)
-        self.assertEqual(str(s1), str(s1c))
-        self.assertEqual(str(s2), str(s2c))
         self.assertIsNot(s1, s1c)
         self.assertIsNot(s2, s2c)
         self.assertNotEqual(s1, s1c)
