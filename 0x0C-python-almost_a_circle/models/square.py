@@ -7,7 +7,7 @@ class Square(Rectangle):
     """Square class inherits from Rectangle"""
     def __init__(self, size, x=0, y=0, id=None):
         """class constructor"""
-        super().__init__(width=size, height=size, x=x, y=y, id=id)
+        super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
@@ -22,7 +22,8 @@ class Square(Rectangle):
 
     def __str__(self):
         """returns string representation of Square"""
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+        f = "[Square] ({}) {}/{} - {}"
+        return f.format(self.id, self.x, self.y, self.height)
 
     def update(self, *args, **kwargs):
         """updates attributes of Square"""
