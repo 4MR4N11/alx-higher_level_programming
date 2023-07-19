@@ -31,3 +31,5 @@
 - [0x0C](./0x0C-python-almost_a_circle): Python - Almost a circle
 
 - [0x0D](./0x0D-SQL_introduction): SQL - Introduction
+
+- [0x0E](./0x0E-SQL_more_queries): SQL - More queries
