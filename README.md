@@ -1,8 +1,8 @@
-# Python.
+# High-level Programming.
 
 ## About
 
-- This repository consists of all python projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course.
+- This repository consists of all high-level programming projects done with [ALX Africa](https://www.alxafrica.com/) Full stack Software Engineering course.
 
 ## Projects
 
@@ -33,3 +33,5 @@
 - [0x0D](./0x0D-SQL_introduction): SQL - Introduction
 
 - [0x0E](./0x0E-SQL_more_queries): SQL - More queries
+
+- [0x12](./0x12-javascript-warm_up): JavaScript - Warm up
