@@ -38,3 +38,4 @@ This is a repository containing assignments for ALX School done in Javascript.
 
 - [102-add_me_maybe.js](./102-add_me_maybe.js) - Function that increments and calls a function.
 
+- [103-object_fct.js](./103-object_fct.js) - Update this script by adding a new function `incr` that increments the integer `value`.
