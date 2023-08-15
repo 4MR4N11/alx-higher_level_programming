@@ -4,13 +4,12 @@ const parentSquare = require('./5-square');
 
 class Square extends parentSquare {
   charPrint (c) {
-    let char = 'X';
-    if (c !== undefined) {
-      char = char.replace('X', 'C');
+    if (c === undefined) {
+      c = 'X';
     }
     let line = '';
     for (let i = 0; i < this.width; i++) {
-      line += char;
+      line += c;
     } for (let j = 0; j < this.height; j++) {
       console.log(line);
     }
