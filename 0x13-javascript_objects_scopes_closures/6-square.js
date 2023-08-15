@@ -5,7 +5,7 @@ const parentSquare = require('./5-square');
 class Square extends parentSquare {
   charPrint (c) {
     let char = 'X';
-    if (c) {
+    if (c !== undefined) {
       char = char.replace('X', 'C');
     }
     let line = '';
