@@ -25,3 +25,5 @@ This project is about JavaScript objects, scopes and closures.
 - [9-logme.js](9-logme.js) - A function that prints the number of arguments already printed and the new argument value.
 
 - [10-converter.js](10-converter.js) - A function that converts a number from base 10 to another base passed as argument.
+
+- [100-map.js](100-map.js) - A script that imports an array and computes a new array.
