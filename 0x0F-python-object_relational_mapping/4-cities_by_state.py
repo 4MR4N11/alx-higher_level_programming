@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """Module for State class"""
+
 import MySQLdb
 import sys
-
-args = sys.argv
 
 
 if __name__ == '__main__':
     """Function main"""
+    args = sys.argv
     db = MySQLdb.connect(
         host='localhost',
         user=args[1],

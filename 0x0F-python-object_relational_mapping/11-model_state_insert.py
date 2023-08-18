@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Module for State class"""""
+"""Module for State class"""
+
 from model_state import Base, State
 import sys
 from sqlalchemy import create_engine
