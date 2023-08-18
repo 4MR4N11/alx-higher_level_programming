@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for State class"""
+""" Module for State class """
 
 import MySQLdb
 import sys
