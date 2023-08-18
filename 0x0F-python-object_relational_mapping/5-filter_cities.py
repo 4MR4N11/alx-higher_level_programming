@@ -26,3 +26,5 @@ if __name__ == '__main__':
         for key in row:
             keys.append(key)
     print(', '.join(item for item in keys))
+    cursor.close()
+    db.close()
