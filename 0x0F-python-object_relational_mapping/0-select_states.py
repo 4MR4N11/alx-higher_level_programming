@@ -4,9 +4,9 @@
 import MySQLdb
 import sys
 
-args = sys.argv
 if __name__ == '__main__':
     """Function main"""
+    args = sys.argv
     db = MySQLdb.connect(
         host='localhost',
         port=3306,
