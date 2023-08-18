@@ -16,7 +16,7 @@ if __name__ == '__main__':
         database=args[3]
     )
     cursor = db.cursor()
-    query = "SELECT * FROM states WHERE name LIKE BINARY {}".format(args[4])
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{}'".format(args[4])
     cursor.execute(query)
 
     rows = cursor.fetchall()
