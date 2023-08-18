@@ -34,4 +34,6 @@
 
 - [0x0E](./0x0E-SQL_more_queries): SQL - More queries
 
+- [0x0F](./0x0F-python-object_relational_mapping): Python - Object-relational mapping
+
 - [0x12](./0x12-javascript-warm_up): JavaScript - Warm up
