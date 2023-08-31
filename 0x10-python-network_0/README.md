@@ -13,3 +13,13 @@ This project is about using curl to make requests to servers.
 - [3-methods.sh](3-methods.sh) - Bash script that takes in a URL and displays all HTTP methods the server will accept
 
 - [4-header.sh](4-header.sh) - Bash script that takes in a URL as an argument, sends a GET request to the URL, along with a custom header, and displays the body of the response
+
+- [5-post_params.sh](5-post_params.sh) - Bash script that takes in a URL, sends a POST request to the passed URL, and displays the body of the response
+
+- [6-peak.py](6-peak.py) - Python function that finds a peak in a list of unsorted integers
+
+- [6-peak.txt](6-peak.txt) - Text file containing the complexity of the algorithm
+
+- [100-status_code.sh](100-status_code.sh) - Bash script that sends a request to a URL passed as an argument, and displays only the status code of the response
+
+- [101-post_json.sh](101-post_json.sh) - Bash script that sends a JSON POST request to a URL passed as the first argument, and displays the body of the response
