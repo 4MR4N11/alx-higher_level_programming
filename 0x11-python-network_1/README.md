@@ -23,3 +23,5 @@ This project is about using urllib and requests Python libraries to make HTTP re
 - [8-json_api.py](8-json_api.py) - Python script that takes in a letter and sends a `POST` request to `http://0.0.0.0:5000/search_user` with the letter as a parameter. using `requests`.
 
 - [10-my_github.py](10-my_github.py) - Python script that takes your Github credentials (username and password) and uses the Github API to display your id. using `requests`.
+
+- [100-github_commits.py](100-github_commits.py) - Python script that lists the 10 most recent commits from the repository `rails` by the user `rails` using the Github API. using `requests`.
