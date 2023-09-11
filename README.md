@@ -24,6 +24,8 @@
 
 - [0x08](./0x08-python-more_classes): Python - More Classes and Objects
 
+- [0x09](./0x09-python-everything_is_object): Python - Everything is object
+
 - [0x0A](./0x0A-python-inheritance): Python - Inheritance
 
 - [0x0B](./0x0B-python-input_output): Python - Input/Output
@@ -36,4 +38,10 @@
 
 - [0x0F](./0x0F-python-object_relational_mapping): Python - Object-relational mapping
 
-- [0x12](./0x12-javascript-warm_up): JavaScript - Warm up
+- [0x10](./0x10-python-network_0): Python - Network #0
+
+- [0x11](./0x11-python-network_1): Python - Network #1
+
+- [0x12](./0x12-javascript-warm_up): JavaScript - Warm-up
+
+- [0x13](./0x13-javascript_objects_scopes_closures): JavaScript - Objects, Scopes, and Closures
