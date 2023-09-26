@@ -17,3 +17,5 @@ This project is about using JavaScript to make request to an API and get data fr
 - [5-request_store.js](5-request_store.js) - Script that gets the contents of a webpage and stores it in a file.
 
 - [6-completed_tasks.js](6-completed_tasks.js) - Script that computes the number of tasks completed by user id.
+
+- [100-starwars_characters.js](100-starwars_characters.js) - Script that prints all characters of a Star Wars movie.
